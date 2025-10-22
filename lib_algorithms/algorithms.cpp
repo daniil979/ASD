@@ -1,9 +1,9 @@
 #include "algorithms.h"
-#include "../stack.h"  // используем ваш Stack
+#include "../stack.h"
 #include <unordered_map>
 
 bool check_brackets(std::string expression) {
-    Stack<char> brackets;  // используем ваш Stack вместо std::stack
+    Stack<char> brackets; 
     std::unordered_map<char, char> pairs = {
         {')', '('},
         {']', '['},
