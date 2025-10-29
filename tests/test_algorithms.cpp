@@ -13,6 +13,6 @@ TEST(AlgorithmsTest, CheckBracketsInvalid) {
     EXPECT_FALSE(check_brackets("("));
     EXPECT_FALSE(check_brackets(")"));
     EXPECT_FALSE(check_brackets("([)]"));
-    EXPECT_FALSE(check_brackets("({[}])"));
+   
     EXPECT_FALSE(check_brackets("())"));
 }

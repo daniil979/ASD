@@ -9,6 +9,9 @@ include(cmake/function.cmake)
 add_subdirectory(lib_easy_example)  # здесь ваш Stack
 add_subdirectory(main)
 add_library(QueueLib lib_queue/queue.h lib_queue/queue.cpp)
+add_library(LinkedListLib 
+    lib_linked_list/linked_list.h
+)
 
 # Algorithms зависит от Stack (EasyExample)
 add_library(AlgorithmsLib 
@@ -20,6 +23,9 @@ target_link_libraries(AlgorithmsLib EasyExample)  # зависимость
 option(BTEST "build test?" ON)
 
 if(BTEST)
+    add_executable(LinkedListTests tests/test_linked_list.cpp)
+    target_link_libraries(LinkedListTests LinkedListLib gtest gtest_main)
+    add_test(NAME LinkedListTests COMMAND LinkedListTests)
     set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
     add_subdirectory("third_party/gtest" EXCLUDE_FROM_ALL)
     enable_testing()
