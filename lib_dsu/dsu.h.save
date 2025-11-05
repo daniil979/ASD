@@ -1,0 +1,34 @@
+cat > lib_dsu/dsu.h << 'EOF'
+// #ifndef DSU_H
+#define DSU_H
+
+#include <vector>
+
+class DSU {
+private:
+    std::vector<int> parent;
+    std::vector<int> rank;
+    int size;
+
+public:
+    // Конструктор
+    DSU(int size);
+    
+    // Деструктор
+    ~DSU();
+    
+    // Объединить два множества
+    void unite(int a, int b);
+    
+    // Найти представителя множества
+    int find(int x);
+    
+    // Проверить, находятся ли элементы в одном множестве
+    bool sameSet(int a, int b);
+    
+    // Получить размер системы
+    int getSize() const;
+};
+
+#endif
+EOF
