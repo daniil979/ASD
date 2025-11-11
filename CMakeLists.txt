@@ -11,6 +11,13 @@ add_subdirectory(main)
 add_library(QueueLib lib_queue/queue.h lib_queue/queue.cpp)
 add_library(AlgorithmsLib lib_algorithms/algorithms.cpp lib_algorithms/algorithms.h)
 target_link_libraries(AlgorithmsLib EasyExample)
+add_library(DSULib 
+    lib_dsu/dsu.cpp 
+    lib_dsu/dsu.h
+    lib_dsu/island_counter.cpp
+    lib_dsu/island_counter.h
+)
+
 
 # Добавляем DSU библиотеку
 add_library(DSULib lib_dsu/dsu.cpp lib_dsu/dsu.h)
@@ -41,4 +48,7 @@ if(BTEST)
     add_test(NAME QueueTests COMMAND QueueTests)
     add_test(NAME AlgorithmsTests COMMAND AlgorithmsTests)
     add_test(NAME DSUTests COMMAND DSUTests)
+    add_executable(IslandCounterTests tests/test_island_counter.cpp)
+    target_link_libraries(IslandCounterTests DSULib gtest gtest_main)
+    add_test(NAME IslandCounterTests COMMAND IslandCounterTests)
 endif()

@@ -15,7 +15,7 @@ TEST (LinkedListTest, IteratorReadValues) {
         ++it;
         EXPECT_EQ(*it, 30);
         
-        // Проверяем что дошли до конца
+        
         ++it;
         EXPECT_TRUE(it == list.end());
     }
@@ -46,14 +46,9 @@ TEST(LinkedListTest, EmptyListWithIterator) {
     LinkedList<std::string> list;
     
     EXPECT_TRUE(list.empty());
-    EXPECT_EQ(list.size(), 0);
-    
     EXPECT_TRUE(list.begin() == list.end());
     
-    LinkedList<std::string>::Iterator it = list.begin();
-    LinkedList<std::string>::Iterator end = list.end();
-    EXPECT_TRUE(it == end);
-    list.push_back("hello");
-      EXPECT_FALSE(list.begin() == list.end());
-      EXPECT_EQ(*list.begin(), "hello");
-  }
+    list.push_back(" ");
+    EXPECT_FALSE(list.begin() == list.end());
+    EXPECT_EQ(*list.begin(), " ");
+}

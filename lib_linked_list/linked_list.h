@@ -82,8 +82,7 @@ public:
         }
         return tail->data;
     }
-    
-    // Итератор
+
     class Iterator {
     private:
         Node* current;
