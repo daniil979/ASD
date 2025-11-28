@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'expression_parser' in project 'ExpressionParser'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'ExpressionParser'
+Target 'ZERO_CHECK' in project 'ExpressionParser' (no dependencies)

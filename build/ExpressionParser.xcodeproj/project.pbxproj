@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4785170A7190F53833CBE48E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C5EA60DEA59A4D7BA1018F4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D021700853A738438DDD2E4E /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		D7898D78D31A794B191A92AD /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0E9A94B688984007A51A1E4B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				264BB5265FBA8CF67BD05068 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				28C297AD4C2A459E8C8A5A1D /* PBXTargetDependency */,
+				5A7AEB13930E4B4A9E7FA71E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		009DDA5688AA4D138B4E37EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E764DB3C9B946ED813BBDA3 /* main.cpp */; };
+		3D283C940CA64D259E54F749 /* Token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96AAF3E8052A4C439BF19368 /* Token.cpp */; };
+		40F7D623C3DA45AE8363D40C /* MathFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2FEE76B3A40D3B22FBB5B /* MathFunctions.cpp */; };
+		BC6B4ABE18D244EBAE6D8038 /* Expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1433AFF8670F46E2A4B8426E /* Expression.cpp */; };
+		E98D4D5EB5FA44F9A20D0242 /* Evaluator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA76A611F134CDA88B5205C /* Evaluator.cpp */; };
+		F361B125B3F64C4F90696DD7 /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 206D860680764249A0C0FEE3 /* Parser.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BA1C67A3ED042ACACF661E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED465543B7E641D1975AAB32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7558CBA6A2E45C60C1D77547;
+			remoteInfo = expression_parser;
+		};
+		7B50096E62584F879AE59359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED465543B7E641D1975AAB32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4785170A7190F53833CBE48E;
+			remoteInfo = ZERO_CHECK;
+		};
+		92D8873E0A2D466D9FD3EF35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED465543B7E641D1975AAB32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4785170A7190F53833CBE48E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D543342ED9749C00A3D5D9 /* Evaluator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Evaluator.h; sourceTree = "<group>"; };
+		04D543352ED9749C00A3D5D9 /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
+		04D543362ED9749C00A3D5D9 /* MathFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathFunctions.h; sourceTree = "<group>"; };
+		04D543372ED9749C00A3D5D9 /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		04D543382ED9749C00A3D5D9 /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		1433AFF8670F46E2A4B8426E /* Expression.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Expression.cpp; path = src/Expression.cpp; sourceTree = SOURCE_ROOT; };
+		206D860680764249A0C0FEE3 /* Parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Parser.cpp; path = src/Parser.cpp; sourceTree = SOURCE_ROOT; };
+		3DA76A611F134CDA88B5205C /* Evaluator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Evaluator.cpp; path = src/Evaluator.cpp; sourceTree = SOURCE_ROOT; };
+		6E764DB3C9B946ED813BBDA3 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		7F1C9BF936E34353876422EC /* expression_parser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = expression_parser; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AAF3E8052A4C439BF19368 /* Token.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Token.cpp; path = src/Token.cpp; sourceTree = SOURCE_ROOT; };
+		9EE2FEE76B3A40D3B22FBB5B /* MathFunctions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MathFunctions.cpp; path = src/MathFunctions.cpp; sourceTree = SOURCE_ROOT; };
+		9FDDB9A1A75F49269ECD69D1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D9B8812374F44E9C9BD763C0 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D67803139C346658DE76316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018A5E5C152B451C92D45656 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		04D543392ED9749C00A3D5D9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				04D543342ED9749C00A3D5D9 /* Evaluator.h */,
+				04D543352ED9749C00A3D5D9 /* Expression.h */,
+				04D543362ED9749C00A3D5D9 /* MathFunctions.h */,
+				04D543372ED9749C00A3D5D9 /* Parser.h */,
+				04D543382ED9749C00A3D5D9 /* Token.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1A83A417FAED43BDB9D8B851 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2143AB2D49C04D98AE3C8446 /* expression_parser */ = {
+			isa = PBXGroup;
+			children = (
+				EC636FE7BA98447BB597ABF2 /* Source Files */,
+				9FDDB9A1A75F49269ECD69D1 /* CMakeLists.txt */,
+			);
+			name = expression_parser;
+			sourceTree = "<group>";
+		};
+		E55DDD2AB28C45658FA23F9B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1A83A417FAED43BDB9D8B851 /* CMake Rules */,
+				D9B8812374F44E9C9BD763C0 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		EBFF66985719413FA5439C0F = {
+			isa = PBXGroup;
+			children = (
+				04D543392ED9749C00A3D5D9 /* include */,
+				2143AB2D49C04D98AE3C8446 /* expression_parser */,
+				E55DDD2AB28C45658FA23F9B /* ALL_BUILD */,
+				FA3337F8505E4439BA42ED72 /* Products */,
+				F64A340730E2437D9EB9DFAE /* Frameworks */,
+				018A5E5C152B451C92D45656 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		EC636FE7BA98447BB597ABF2 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E764DB3C9B946ED813BBDA3 /* main.cpp */,
+				3DA76A611F134CDA88B5205C /* Evaluator.cpp */,
+				1433AFF8670F46E2A4B8426E /* Expression.cpp */,
+				9EE2FEE76B3A40D3B22FBB5B /* MathFunctions.cpp */,
+				206D860680764249A0C0FEE3 /* Parser.cpp */,
+				96AAF3E8052A4C439BF19368 /* Token.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F64A340730E2437D9EB9DFAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA3337F8505E4439BA42ED72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F1C9BF936E34353876422EC /* expression_parser */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7558CBA6A2E45C60C1D77547 /* expression_parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085A8BF450924D968D210464 /* Build configuration list for PBXNativeTarget "expression_parser" */;
+			buildPhases = (
+				A81F03CAAFC447CDAFBE82FF /* Sources */,
+				8D67803139C346658DE76316 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA7F1BE1CF7406983C2FF85 /* PBXTargetDependency */,
+			);
+			name = expression_parser;
+			productName = expression_parser;
+			productReference = 7F1C9BF936E34353876422EC /* expression_parser */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED465543B7E641D1975AAB32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = C62146306CB74827BEDDB3A5 /* Build configuration list for PBXProject "ExpressionParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBFF66985719413FA5439C0F;
+			projectDirPath = "/Users/mac/ExpressionParser-project";
+			projectRoot = "";
+			targets = (
+				D7898D78D31A794B191A92AD /* ALL_BUILD */,
+				7558CBA6A2E45C60C1D77547 /* expression_parser */,
+				4785170A7190F53833CBE48E /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		264BB5265FBA8CF67BD05068 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Users/mac/ExpressionParser-project/build/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D021700853A738438DDD2E4E /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Users/mac/ExpressionParser-project/build/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  make -f /Users/mac/ExpressionParser-project/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  make -f /Users/mac/ExpressionParser-project/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  make -f /Users/mac/ExpressionParser-project/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/mac/ExpressionParser-project/build\n  make -f /Users/mac/ExpressionParser-project/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A81F03CAAFC447CDAFBE82FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				009DDA5688AA4D138B4E37EC /* main.cpp in Sources */,
+				E98D4D5EB5FA44F9A20D0242 /* Evaluator.cpp in Sources */,
+				BC6B4ABE18D244EBAE6D8038 /* Expression.cpp in Sources */,
+				40F7D623C3DA45AE8363D40C /* MathFunctions.cpp in Sources */,
+				F361B125B3F64C4F90696DD7 /* Parser.cpp in Sources */,
+				3D283C940CA64D259E54F749 /* Token.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C297AD4C2A459E8C8A5A1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7558CBA6A2E45C60C1D77547 /* expression_parser */;
+			targetProxy = 0BA1C67A3ED042ACACF661E0 /* PBXContainerItemProxy */;
+		};
+		5A7AEB13930E4B4A9E7FA71E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4785170A7190F53833CBE48E /* ZERO_CHECK */;
+			targetProxy = 92D8873E0A2D466D9FD3EF35 /* PBXContainerItemProxy */;
+		};
+		6CA7F1BE1CF7406983C2FF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4785170A7190F53833CBE48E /* ZERO_CHECK */;
+			targetProxy = 7B50096E62584F879AE59359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A03C633D282445396BB2393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mac/ExpressionParser-project/build/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mac/ExpressionParser-project/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++14' ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = expression_parser;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mac/ExpressionParser-project/build/build/expression_parser.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		12CB567EF5C546C4B9D18483 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mac/ExpressionParser-project/build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mac/ExpressionParser-project/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = expression_parser;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mac/ExpressionParser-project/build/build/expression_parser.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		146C27316D4D4A44B814CF32 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		1AF26F7E804C46659DC5A88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mac/ExpressionParser-project/build/build";
+			};
+			name = Release;
+		};
+		2726AAB47646419BAFC7CE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		457754D487AE41C8970809C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		597B1A51517741A689BA2231 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mac/ExpressionParser-project/build/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mac/ExpressionParser-project/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = expression_parser;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mac/ExpressionParser-project/build/build/expression_parser.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		63A51F16B4CC4C7D8785FF6D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		6B782EB40B034E35AA50E88F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		6FB3C4DFBCE446CB8B45B76D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mac/ExpressionParser-project/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		B865727B89C14E959CBFFD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/mac/ExpressionParser-project/build/build";
+			};
+			name = Debug;
+		};
+		C090DC19B606439691FF6D1F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		EFB43D8645E94DC293DE30C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		F2CD54D0A33E497C832F8D3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mac/ExpressionParser-project/build/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/mac/ExpressionParser-project/include",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++14'",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = expression_parser;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mac/ExpressionParser-project/build/build/expression_parser.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		F906720F773741D8B2A20787 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mac/ExpressionParser-project/build/build";
+			};
+			name = MinSizeRel;
+		};
+		FD8EAAD6D7924B69A60EA4D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085A8BF450924D968D210464 /* Build configuration list for PBXNativeTarget "expression_parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A03C633D282445396BB2393 /* Debug */,
+				F2CD54D0A33E497C832F8D3B /* Release */,
+				597B1A51517741A689BA2231 /* MinSizeRel */,
+				12CB567EF5C546C4B9D18483 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0E9A94B688984007A51A1E4B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD8EAAD6D7924B69A60EA4D6 /* Debug */,
+				457754D487AE41C8970809C7 /* Release */,
+				6B782EB40B034E35AA50E88F /* MinSizeRel */,
+				63A51F16B4CC4C7D8785FF6D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C5EA60DEA59A4D7BA1018F4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB43D8645E94DC293DE30C0 /* Debug */,
+				2726AAB47646419BAFC7CE26 /* Release */,
+				C090DC19B606439691FF6D1F /* MinSizeRel */,
+				146C27316D4D4A44B814CF32 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C62146306CB74827BEDDB3A5 /* Build configuration list for PBXProject "ExpressionParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B865727B89C14E959CBFFD1C /* Debug */,
+				1AF26F7E804C46659DC5A88B /* Release */,
+				F906720F773741D8B2A20787 /* MinSizeRel */,
+				6FB3C4DFBCE446CB8B45B76D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED465543B7E641D1975AAB32 /* Project object */;
+}
