@@ -7,24 +7,20 @@ int IslandCounter::countIslands(const std::vector<std::vector<int>>& matrix) {
     int rows = matrix.size();
     int cols = matrix[0].size();
     
-    // Создаем DSU для всех ячеек матрицы
     DSU dsu(rows * cols);
     
-    // Направления: вверх, вниз, влево, вправо
     int directions[4][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-    
-    // Первый проход: создаем множества для единиц
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             if (matrix[i][j] == 1) {
-                // Проверяем соседей
+               
                 for (auto& dir : directions) {
                     int newRow = i + dir[0];
                     int newCol = j + dir[1];
                     
                     if (isValid(newRow, newCol, rows, cols) &&
                         matrix[newRow][newCol] == 1) {
-                        // Объединяем с соседом
+                       
                         dsu.unite(toIndex(i, j, cols), toIndex(newRow, newCol, cols));
                     }
                 }
@@ -32,7 +28,6 @@ int IslandCounter::countIslands(const std::vector<std::vector<int>>& matrix) {
         }
     }
     
-    // Второй проход: подсчитываем уникальные корни
     std::vector<bool> uniqueRoots(rows * cols, false);
     int islandCount = 0;
     
