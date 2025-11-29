@@ -1,34 +1,103 @@
-cat > lib_dsu/dsu.h << 'EOF'
-// #ifndef DSU_H
-#define DSU_H
-
+#include <gtest/gtest.h>
 #include <vector>
+#include <stdexcept>
+#include "dsu.h"
 
-class DSU {
-private:
-    std::vector<int> parent;
-    std::vector<int> rank;
-    int size;
-
-public:
-    // Конструктор
-    DSU(int size);
+class DSUTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+    }
     
-    // Деструктор
-    ~DSU();
-    
-    // Объединить два множества
-    void unite(int a, int b);
-    
-    // Найти представителя множества
-    int find(int x);
-    
-    // Проверить, находятся ли элементы в одном множестве
-    bool sameSet(int a, int b);
-    
-    // Получить размер системы
-    int getSize() const;
+    void TearDown() override {
+    }
 };
+TEST_F(DSUTest, ConstructorInitializesCorrectly) {
+    DSU dsu(5);
+    
+    EXPECT_EQ(dsu.getSize(), 5);
+    for (int i = 0; i < 5; i++) {
+        for (int j = i + 1; j < 5; j++) {
+            EXPECT_FALSE(dsu.sameSet(i, j));
+        }
+    }
+}
 
-#endif
-EOF
+TEST_F(DSUTest, UniteAndSameSetBasic) {
+    DSU dsu(5);
+
+    dsu.unite(0, 1);
+    EXPECT_TRUE(dsu.sameSet(0, 1));
+    EXPECT_FALSE(dsu.sameSet(0, 2));
+    EXPECT_FALSE(dsu.sameSet(1, 2));
+
+    dsu.unite(2, 3);
+    EXPECT_TRUE(dsu.sameSet(2, 3));
+    EXPECT_FALSE(dsu.sameSet(0, 2));
+    EXPECT_FALSE(dsu.sameSet(1, 3));
+    dsu.unite(1, 2);
+    EXPECT_TRUE(dsu.sameSet(0, 2));
+    EXPECT_TRUE(dsu.sameSet(1, 3));
+    EXPECT_TRUE(dsu.sameSet(0, 3));
+}
+TEST_F(DSUTest, UniteAlreadyUnited) {
+    DSU dsu(3);
+    
+    dsu.unite(0, 1);
+    EXPECT_TRUE(dsu.sameSet(0, 1));
+    
+    dsu.unite(0, 1);
+    dsu.unite(1, 0);
+    
+    EXPECT_TRUE(dsu.sameSet(0, 1));
+    EXPECT_FALSE(dsu.sameSet(0, 2));
+}
+
+TEST_F(DSUTest, FindReturnsConsistentRoot) {
+    DSU dsu(4);
+    for (int i = 0; i < 4; i++) {
+        EXPECT_EQ(dsu.find(i), i);
+    }
+    dsu.unite(0, 1);
+    int root1 = dsu.find(0);
+    int root2 = dsu.find(1);
+    EXPECT_EQ(root1, root2);
+    dsu.unite(1, 2);
+    EXPECT_EQ(dsu.find(0), dsu.find(2));
+    EXPECT_EQ(dsu.find(1), dsu.find(2));
+}
+
+TEST_F(DSUTest, MultipleIndependentSets) {
+    DSU dsu(8);
+    dsu.unite(0, 1);
+    dsu.unite(2, 3);
+    dsu.unite(4, 5);
+    
+    EXPECT_TRUE(dsu.sameSet(0, 1));
+    EXPECT_TRUE(dsu.sameSet(2, 3));
+    EXPECT_TRUE(dsu.sameSet(4, 5));
+    
+    EXPECT_FALSE(dsu.sameSet(0, 2));
+    EXPECT_FALSE(dsu.sameSet(1, 4));
+    EXPECT_FALSE(dsu.sameSet(3, 6));
+    EXPECT_FALSE(dsu.sameSet(5, 7));
+
+    EXPECT_FALSE(dsu.sameSet(6, 7));
+    EXPECT_FALSE(dsu.sameSet(6, 0));
+    EXPECT_FALSE(dsu.sameSet(7, 2));
+}
+TEST_F(DSUTest, GetSizeReturnsCorrectValue) {
+    DSU dsu1(5);
+    EXPECT_EQ(dsu1.getSize(), 5);
+    
+    DSU dsu2(100);
+    EXPECT_EQ(dsu2.getSize(), 100);
+    
+    DSU dsu3(1);
+    EXPECT_EQ(dsu3.getSize(), 1);
+}
+
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
